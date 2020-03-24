@@ -1,1 +1,1 @@
-di simpan di sini biar gak hilang
+disimpan di sini biar gak hilang
