@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-</head>
-<body>
-    <h1>{{ headline }}</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block heading %}
+    First page
+{% endblock %}
+
+{% block body %}
+    <p>If you want to register your own filters in Jinja2 you have two ways to do that. You can either put them by hand into the jinja_env of the application or use the template_filter() decorator.</p>
+    <a href="{{ url_for('newyear')}}">Tahun Baru</a>
+{% endblock %}
